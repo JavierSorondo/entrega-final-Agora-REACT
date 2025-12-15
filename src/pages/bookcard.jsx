@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/bookCard.css'; 
+import '../styles/bookcard.css'; 
 import { Link } from 'react-router-dom';
 
 function BookCard({ book, onSolicitarDescarga, isAdmin, onEdit }) { 
