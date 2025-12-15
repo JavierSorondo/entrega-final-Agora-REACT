@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import BookCard from './bookcard'; 
 import useLibros from '../useLibros.js'; 
-import '../styles/Recomendaciones.css'; 
+import '../styles/recomendaciones.css'; 
 
 const NUM_RECOMENDACIONES = 3;
 
