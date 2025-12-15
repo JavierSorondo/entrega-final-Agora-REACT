@@ -1,0 +1,132 @@
+.busqueda-container {
+    padding: 40px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+}
+
+.section-title {
+    color: #4b3832; 
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+/* --------------------
+Campo de Búsqueda Principal
+   -------------------- */
+
+.busqueda-input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    border: 2px solid #a39b8b; /* Borde sutil */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.busqueda-input:focus {
+    border-color: #8b7569; /* Color de acento al enfocar */
+    outline: none;
+    box-shadow: 0 0 8px rgba(139, 117, 105, 0.3);
+}
+
+.no-results {
+    text-align: center;
+    color: #8b7569;
+    font-size: 1.2em;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #e0d7c7;
+    background-color: #fcf8f3;
+    border-radius: 4px;
+}
+
+/* --------------------
+Resultados Agrupados
+   -------------------- */
+
+.resultados-grupo {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0d7c7;
+    border-radius: 6px;
+    background-color: #f7f3e8; /* Fondo suave para el grupo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.resultados-grupo h3 {
+    color: #4b3832;
+    border-bottom: 2px solid #a39b8b;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.libros-agrupados {
+    list-style: none;
+    padding: 0;
+}
+
+.libro-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #a39b8b;
+}
+
+.libro-item:last-child {
+    border-bottom: none; /* Eliminar el guion en el último elemento */
+}
+
+.item-info {
+    font-size: 1.1em;
+    color: #5d524d;
+    max-width: 75%; /* Deja espacio para el botón */
+}
+
+.item-info span {
+    font-weight: 500;
+}
+
+/* Estilo del botón "Ver Reseña" */
+.btn-reseña-small {
+    background-color: #8b7569;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que el botón se rompa */
+}
+
+.btn-reseña-small:hover {
+    background-color: #4b3832;
+}
+
+/* --------------------
+Responsividad
+   -------------------- */
+@media (max-width: 600px) {
+    .busqueda-container {
+        padding: 20px;
+    }
+    .libro-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .btn-reseña-small {
+        width: 100%;
+        text-align: center;
+    }
+    .item-info {
+        max-width: 100%;
+    }
+}

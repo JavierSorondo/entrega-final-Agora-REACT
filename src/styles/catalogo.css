@@ -1,0 +1,114 @@
+/* --------------------
+Estilos del Contenedor Principal
+   -------------------- */
+.catalogo-container {
+    padding: 40px 60px;
+    background-color: #f7f3e8; /* Fondo de papel crema */
+    min-height: 80vh; /* Para que la página tenga un tamaño mínimo */
+    font-family: 'Georgia', serif; 
+    color: #4b3832;
+}
+
+.section-title {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #4b3832;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcd7c9;
+}
+
+/* --------------------
+Estilos de la Rejilla (Grid)
+   -------------------- */
+.libros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.catalogo-controles {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #5d524d;
+}
+
+.select-ordenar {
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: 1px solid #a39b8b;
+    border-radius: 4px;
+    background-color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Estilos de Paginación */
+.paginacion-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.btn-paginacion {
+    background-color: #8b7569;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-paginacion:hover:not(:disabled) {
+    background-color: #4b3832;
+}
+
+.btn-paginacion:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.info-paginacion {
+    font-size: 1.1em;
+    color: #5d524d;
+    font-weight: 500;
+}
+
+/* --------------------
+Estados de Carga y Error
+   -------------------- */
+.catalogo-container.loading p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #a39b8b;
+    font-style: italic;
+}
+
+.catalogo-container.error .error-message {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c93b3b;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .catalogo-container {
+        padding: 20px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+}

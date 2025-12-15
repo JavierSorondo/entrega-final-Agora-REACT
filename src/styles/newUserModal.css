@@ -1,0 +1,134 @@
+/* --------------------
+   Fondo Oscurecido del Modal
+   -------------------- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(75, 56, 50, 0.45); /* Tono marrón oscuro, semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* --------------------
+   Contenedor del Modal (Tarjeta)
+   -------------------- */
+.modal-content {
+    width: 500px;
+    background-color: #fcfbf7; /* Igual que #tarjeta */
+    padding: 35px;
+    border: 1px solid #dcd7c9;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Georgia', serif;
+    position: relative;
+    animation: modalFadeIn 0.25s ease-out;
+}
+
+/* --------------------
+   Animación de Aparición
+   -------------------- */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* --------------------
+   Título
+   -------------------- */
+.modal-content h3 {
+    color: #4b3832;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #dcd7c9;
+    padding-bottom: 10px;
+}
+
+/* --------------------
+   Estilos Formulario
+   -------------------- */
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5d524d;
+    font-size: 1.05em;
+    font-weight: 500;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcd7c9;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #4b3832;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content input:focus {
+    border-color: #a39b8b;
+    box-shadow: 0 0 5px rgba(163, 155, 139, 0.5);
+    outline: none;
+}
+
+/* --------------------
+   Botón CREAR
+   -------------------- */
+.btn-create {
+    width: 100%;
+    padding: 12px;
+    background-color: #4b3832;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.btn-create:hover {
+    background-color: #5d524d;
+}
+
+.btn-create:active {
+    transform: scale(0.98);
+}
+
+/* --------------------
+   Botón CANCELAR
+   -------------------- */
+.btn-cancel {
+    width: 100%;
+    padding: 10px;
+    background-color: #a39b8b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background-color: #8b7569;
+}

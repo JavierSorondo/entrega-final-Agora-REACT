@@ -1,0 +1,126 @@
+/* --------------------
+Estilos del Contenedor Principal (Tarjeta)
+   -------------------- */
+#tarjeta {
+    max-width: 600px;
+    margin: 50px auto; /* Centra la tarjeta en la página */
+    padding: 35px;
+    background-color: #fcfbf7; /* Blanco muy suave, menos oscuro que el navbar */
+    border: 1px solid #dcd7c9; /* Borde sutil para definir la "tarjeta" */
+    border-radius: 8px; /* Bordes ligeramente redondeados (toque moderno) */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Sombra elegante */
+    font-family: 'Georgia', serif; 
+}
+
+/* --------------------
+Estilos de Títulos y Encabezados
+   -------------------- */
+#tarjeta h5 {
+    color: #a39b8b; /* Tono de gris suave para el subtítulo */
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#tarjeta h2 {
+    color: #4b3832; /* Tono de tinta/cuero */
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #dcd7c9;
+    padding-bottom: 10px;
+}
+
+/* --------------------
+Estilos del Formulario
+   -------------------- */
+#tarjeta form div {
+    margin-bottom: 20px;
+}
+
+#tarjeta label {
+    display: block; /* Ocupa todo el ancho */
+    margin-bottom: 8px;
+    color: #5d524d; /* Gris-marrón elegante */
+    font-weight: 500;
+    font-size: 1.05em;
+}
+
+/* --------------------
+Estilos de Inputs y Textarea (para el Mensaje)
+   -------------------- */
+#tarjeta input[type="text"],
+#tarjeta input[type="email"],
+#tarjeta textarea { /* Se agrega textarea por si cambias el input de mensaje */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcd7c9; 
+    border-radius: 4px;
+    font-size: 1em;
+    color: #4b3832;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Asegura que el padding no cambie el ancho total */
+}
+
+/* Estilo al enfocar (toque moderno) */
+#tarjeta input:focus,
+#tarjeta textarea:focus {
+    border-color: #a39b8b; /* Borde de color de acento */
+    box-shadow: 0 0 5px rgba(163, 155, 139, 0.5);
+    outline: none; /* Quita el contorno por defecto del navegador */
+}
+
+/* --------------------
+Estilos del Botón de Envío
+   -------------------- */
+#tarjeta button[type="submit"] {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #4b3832; /* Marrón de acento (como la tinta) */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#tarjeta button[type="submit"]:hover {
+    background-color: #5d524d; /* Oscurece un poco en hover */
+}
+
+#tarjeta button[type="submit"]:active {
+    transform: scale(0.98); /* Pequeño efecto de "clic" */
+}
+
+/* --------------------
+Estilos de la Línea Horizontal y la Sección de Datos
+   -------------------- */
+#tarjeta hr {
+    border: 0;
+    border-top: 1px solid #dcd7c9;
+    margin: 25px 0;
+}
+
+#tarjeta > div:last-child { /* Contenedor de visualización de datos */
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px dashed #dcd7c9;
+}
+
+#tarjeta p {
+    color: #5d524d;
+    font-size: 0.95em;
+    margin: 5px 0;
+}
+
+#tarjeta p strong {
+    color: #4b3832;
+    font-weight: 600;
+}

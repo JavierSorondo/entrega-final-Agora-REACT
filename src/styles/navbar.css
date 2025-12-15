@@ -1,0 +1,129 @@
+/* Contenedor principal */
+.navbar-container {
+    background-color: #f7f3e8;
+    border-bottom: 2px solid #a39b8b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+/* Título */
+.navbar-container h1 {
+    margin: 0;
+    color: #4b3832;
+    font-size: 2.2em;
+}
+
+/* NAV - Menú centrado */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5d524d;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* subrayado animado */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background: #4b3832;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.active-link {
+    font-weight: bold;
+    color: #4b3832 !important;
+}
+
+.active-link::after {
+    width: 100%;
+}
+
+/* Íconos a la derecha */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Descargas */
+.download-icon-btn {
+    background-color: #8b7569;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.download-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 0.7em;
+}
+
+/* Botón para abrir login */
+.btn-login-toggle {
+    background: #4b3832;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-logout {
+    background: #4b3832;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Login flotante */
+.login-form-pop {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    background: white;
+    padding: 15px;
+    border: 1px solid #d0c8b8;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+

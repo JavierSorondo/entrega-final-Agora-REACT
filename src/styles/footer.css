@@ -1,0 +1,39 @@
+.main-footer {
+    background-color: #4b3832; 
+    color: #f7f3e8; 
+    padding: 20px 60px;
+    text-align: center;
+    border-top: 3px solid #a39b8b; 
+    font-family: 'Georgia', serif;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-info {
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-credits {
+    margin: 0;
+    font-style: italic;
+    color: #dcd7c9; 
+}
+
+
+@media (max-width: 600px) {
+    .main-footer {
+        padding: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

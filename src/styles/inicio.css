@@ -1,0 +1,133 @@
+
+.inicio-container {
+    padding: 40px 60px;
+    font-family: 'Georgia', serif; 
+    background-color: #f7f3e8; 
+    color: #4b3832; 
+}
+
+/* --------------------
+   Sección Principal (Hero)
+   -------------------- */
+.hero {
+    text-align: center;
+    padding: 60px 0 40px 0;
+    margin-bottom: 40px;
+    border-bottom: 3px double #a39b8b; /* Línea doble, toque clásico */
+}
+
+.hero-titulo {
+    font-family: 'Playfair Display', serif; /* Se recomienda importar una fuente de título */
+    font-size: 3em;
+    font-weight: 800;
+    color: #4b3832;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-subtitulo {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #5d524d;
+    margin-top: 0;
+}
+
+.mision-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    border-bottom: 3px double #a39b8b;
+}
+
+.texto {
+    flex: 3; 
+    
+}
+
+.section-titulo {
+    font-size: 1.8em;
+    color: #a39b8b;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.parrafo-uno,
+.parrafo-dos,
+.parrafo-tres {
+    line-height: 1.7;
+    font-size: 1.15em;
+    margin-bottom: 20px;
+}
+
+.imagen-placeholder {
+    flex: 1; 
+    text-align: center;
+    padding: 30px;
+    background-color: #e8e4d9; 
+    border-radius: 8px;
+    border: 1px dashed #a39b8b;
+    max-width: 400px; /* Por ejemplo, limita el ancho del área a 400px */
+    margin: 20px auto;
+}
+
+.imagen-placeholder img { 
+    font-size: 4em;
+    color: #4b3832;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagen-placeholder p {
+    font-style: italic;
+    font-size: 1em;
+    color: #5d524d;
+}
+
+.ir-al-catalogo {
+    text-align: center; 
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 1px dashed #dcd7c9;
+}
+
+.btn-catalogo {
+    text-decoration: none;
+    background-color: #4b3832; 
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.btn-catalogo:hover {
+    background-color: #5d524d;
+}
+
+
+/* --------------------
+   Media Queries
+   -------------------- */
+@media (max-width: 900px) {
+    .inicio-container {
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.2em;
+    }
+
+    .mision-section {
+        flex-direction: column;
+    }
+
+    .image-placeholder {
+        margin-top: 30px;
+    }
+}                                           

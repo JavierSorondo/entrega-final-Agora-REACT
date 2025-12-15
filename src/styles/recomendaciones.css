@@ -1,0 +1,97 @@
+.recomendaciones-container {
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+}
+
+.section-title {
+    color: #4b3832; /* Marrón Tinta */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+/* Contenedor Flexbox para las tarjetas */
+.recomendaciones-grid {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre los 5 elementos */
+    flex-wrap: wrap; /* Para asegurar que sean responsivos */
+    gap: 30px;
+}
+
+.recomendacion-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e0d7c7; /* Borde sutil como de papel */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    width: 200px; /* Ancho fijo para 5 elementos en un contenedor de 1200px */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recomendacion-card:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rec-cover {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.rec-title {
+    font-size: 1.1em;
+    color: #4b3832;
+    margin: 5px 0 5px 0;
+    height: 3.3em; /* Para asegurar que las tarjetas tengan la misma altura si el título es largo */
+    overflow: hidden;
+}
+
+.rec-author {
+    font-size: 0.9em;
+    color: #8b7569; /* Marrón más suave */
+    margin-bottom: 15px;
+}
+
+.rec-link {
+    display: inline-block;
+    background-color: #8b7569; /* Marrón de acento */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.rec-link:hover {
+    background-color: #4b3832;
+}
+
+/* Media Query para responsividad en pantallas pequeñas */
+@media (max-width: 1080px) {
+    .recomendaciones-grid {
+        justify-content: center;
+    }
+    .recomendacion-card {
+        width: 45%; /* Dos por fila */
+    }
+}
+@media (max-width: 600px) {
+    .recomendaciones-container {
+        padding: 20px;
+    }
+    .recomendacion-card {
+        width: 100%; /* Uno por fila */
+    }
+}

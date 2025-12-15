@@ -1,0 +1,140 @@
+/* --------------------
+Estilos del Contenedor Principal de la Card
+   -------------------- */
+.book-card-container {
+    background-color: #fcfbf7; /* Blanco suave, destacando sobre el fondo crema */
+    border: 1px solid #dcd7c9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; /* Apila imagen y contenido en pantallas pequeñas */
+    overflow: hidden; /* Asegura que los bordes redondeados se vean bien */
+    max-width: 300px; /* Ancho típico de una card en un grid */
+    min-width: 300px;
+    font-family: 'Georgia', serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card-container:hover {
+    transform: translateY(-5px); /* Efecto 3D sutil (moderno) */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------
+Estilos de la Imagen (Portada del Libro)
+   -------------------- */
+.book-image-wrapper {
+    *width: 100%;
+    height: 350px; /* Altura fija para uniformidad */
+    overflow: hidden;
+    border-bottom: 1px solid #dcd7c9;
+    /* === Estrategia de Fallback: Fondo Sólido === */
+    background-color: #e8e4d9; /* Tono de papel más oscuro (crema) */
+    display: flex; /* Para centrar el texto o ícono de reemplazo */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', serif;
+}
+
+.book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* --------------------
+Estilos de la Información y Texto
+   -------------------- */
+.book-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.book-title {
+    color: #4b3832;
+    font-size: 1.4em;
+    margin: 5px 0 5px 0;
+    font-weight: 700;
+}
+
+.book-author {
+    color: #a39b8b;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.book-author span {
+    color: #5d524d;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* --------------------
+Estilos de Botones
+   -------------------- */
+.button-group {
+    margin-top: auto; /* Empuja el grupo de botones hacia abajo */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+/* Estilo para el botón/enlace de Reseña (secundario) */
+.btn-review {
+    background-color: #dcd7c9;
+    color: #5d524d;
+}
+
+.btn-review:hover {
+    background-color: #a39b8b;
+    color: #4b3832;
+}
+
+/* Estilo para el botón de Descarga (primario/principal) */
+.btn-download {
+    background-color: #4b3832; 
+    color: #ffffff;
+}
+
+.btn-download:hover {
+    background-color: #5d524d; 
+}
+
+/* Estilo para el texto de fallback cuando la imagen no está disponible */
+.fallback-text {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #5d524d; 
+    background-color: #e8e4d9; 
+    border: 3px dashed #a39b8b;
+    box-sizing: border-box;
+}
+
+.fallback-text p {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0;
+}

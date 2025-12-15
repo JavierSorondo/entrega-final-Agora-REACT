@@ -1,0 +1,168 @@
+/* ----------------------------------------------------
+   Resenas.css
+   Estilos Generales para el Componente Reseñas
+   ---------------------------------------------------- */
+
+.resenas-loading, .resenas-error, .resenas-not-found {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #a39b8b; /* Tono de pergamino viejo */
+    font-family: 'Georgia', serif;
+}
+
+/* ====================================================
+   1. Estilos de la Lista General (Índice de Reseñas)
+   ==================================================== */
+.resenas-list-container {
+    padding: 40px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+    color: #4b3832; /* Tono de tinta */
+}
+
+.resenas-list-container h1 {
+    text-align: center;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    border-bottom: 3px double #a39b8b;
+    margin-bottom: 30px;
+}
+
+.resenas-intro {
+    text-align: center;
+    font-style: italic;
+    color: #5d524d;
+    margin-bottom: 30px;
+}
+
+.resenas-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resenas-list-item {
+    border-bottom: 1px dotted #dcd7c9;
+    padding: 12px 0;
+    transition: background-color 0.2s;
+}
+
+.resenas-list-item:hover {
+    background-color: #f7f3e8; /* Efecto pergamino suave al pasar el ratón */
+}
+
+.resenas-list-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #4b3832; /* Tono de tinta */
+}
+
+.resenas-list-author {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #a39b8b;
+    padding-left: 15px;
+}
+
+/* ====================================================
+   2. Estilos del Detalle de Reseña (ResenaDetalle)
+   ==================================================== */
+
+.resena-detalle-card {
+    padding: 40px 60px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fcfbf7; /* Fondo blanco casi pergamino */
+    border: 1px solid #dcd7c9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.btn-back {
+    background: none;
+    border: 1px solid #a39b8b;
+    color: #5d524d;
+    padding: 8px 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #e8e4d9;
+}
+
+.resena-title {
+    font-size: 2.5em;
+    color: #4b3832;
+    border-bottom: 2px solid #a39b8b;
+    padding-bottom: 10px;
+}
+
+.resena-author {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5d524d;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.resena-place {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5d524d;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.resena-cover {
+    max-width: 200px;
+    height: auto;
+    float: left; /* Permite que el texto fluya alrededor de la imagen */
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border: 5px solid #dcd7c9; /* Borde estilo marco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resena-content {
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: #4b3832;
+    padding-top: 10px;
+}
+
+.resena-content h3 {
+    font-size: 1.5em;
+    border-bottom: 1px dashed #a39b8b;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    clear: both; /* Esencial para limpiar el float de la imagen */
+}
+
+/* Botón de Descarga dentro de la Reseña */
+.btn-download-resena {
+    background-color: #8b7569; /* Marrón cálido */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 30px;
+    display: inline-block;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-download-resena:hover {
+    background-color: #4b3832; /* Tono de tinta al pasar el ratón */
+    transform: translateY(-1px);
+}
